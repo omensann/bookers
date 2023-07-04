@@ -1,3 +1,56 @@
 // Place all the styles related to the books controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
+
+a {
+  color: #000;
+}
+
+a:hover {
+  color: #fff;
+  background-color: #000;
+}
+
+th {
+  padding: 5px 0 5px;
+}
+
+td {
+  padding: 0 4px;
+}
+
+table {
+  margin: 0 6px;
+}
+
+h2 {
+  margin: 20px 0 0;
+}
+
+.sub-title {
+  margin-top: 8px;
+}
+
+.create-button {
+  display: block;
+  margin-top: 10px;
+}
+
+.update-button {
+  display: block;
+  margin-top: 10px;
+  margin-bottom: 8px;
+}
+
+main > p {
+  margin:10px 0 30px 30px;
+}
+
+.edit-back-link > p {
+  display: inline-block;
+}
+
+.show-back-link > p {
+  display: inline-block;
+}
+

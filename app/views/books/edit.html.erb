@@ -1,12 +1,15 @@
 <h1>Editing book</h1>
 <%= form_with model: @book, url: book_path(@book.id), method: :patch do |f| %>
-  <p>本のタイトル</p>
+  <div >
+  <p class="sub-title">本のタイトル</p>
   <%= f.text_field :title %>
-  <p>感想</p>
+  <p class="sub-title">感想</p>
   <%= f.text_area :body %>
-  <%= f.submit 'Update book' %>
-<% end %>
-<div class="link">
+  <div class="update-button">
+    <%= f.submit 'Update Book' %>
+    <% end %>
+  </div>
+<div class="show-back-link">
   <%= link_to "Show", book_path(@book.id), method: :get %>
   <p>|</p>
   <a href="/books">Back</a>

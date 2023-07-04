@@ -19,63 +19,15 @@
   box-sizing: border-box
 }
 
+h1, h3, th, td, p {
+  color: #333;
+}
+
 body {
-  width: 1000px;
-  color: #404040;
+  font-size: 13px;
+  padding: 24px 33px 0;
+  font-family: ;
 }
 
-a {
-  color: #404040;
-}
-
-.start-button {
-  display: inline-block;
-  margin-left: 70px;
-}
-
-h1 {
-  margin: 30px 0 0 30px;
-  color: #404040;
-}
-
-.side-margin {
-  margin-left: 10px;
-  margin-right: 10px;
-}
-
-p {
-  font-size: 14px;
-  display: block;
-  color: #404040;
-  margin-left: 70px;
-  margin-bottom: 40px;
-}
-
-table {
-  width: 500px;
-  margin-left: 35px;
-  font-size: 14px;
-}
-
-.up {
-}
-
-.midle-links {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.new-book {
-  display: inline-block;
-  margin-left: 35px;
-}
-
-.new-book > h3 {
-  margin-top: 20px;
-}
-
-.sub-title {
-  margin: 10px 0 0 0;
-}
 
 

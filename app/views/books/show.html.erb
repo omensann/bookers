@@ -1,8 +1,8 @@
 <main>
-  <p><span class="bold-size">本のタイトル:</span><%= @book.title %></p>
-  <p><span class="bold-size">感想:</span><%= @book.body %></p>
+  <p><strong>本のタイトル:</strong><%= @book.title %></p>
+  <p><strong>感想:</strong><%= @book.body %></p>
 </main>
-<div class="links">
+<div class="edit-back-link">
   <%= link_to "Edit", edit_book_path(@book.id) %>
   <p>|</p>
   <a href="/books">Back</a>

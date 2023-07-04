@@ -2,3 +2,26 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
 
+.start-button {
+  color: #666;
+  padding: 0;
+}
+
+.start-button:hover {
+  color: #fff;
+  background-color: #000;
+  background-size: cover;
+  background-position: bottom;
+}
+
+.top-headline > strong {
+  margin: 0 10px 0;
+}
+
+.top-text {
+  margin: 20px 33px;
+}
+
+.top-text > p {
+  margin-bottom: 32px;
+}
