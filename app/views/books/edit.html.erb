@@ -1,4 +1,20 @@
 <h1>Editing book</h1>
+
+<div class="error-box">
+  <div class="error-title">
+  <% if @book.errors.any? %>
+      <%= @book.errors.count %>error prohibited this book from being saved:
+  </div>
+      <ul>
+        <div class="error-message">
+        <% @book.errors.full_messages.each do |message| %>
+          <li><%= message %></li>
+        <% end %>
+        </div>
+      </ul>
+  <% end %>
+</div>
+
 <%= form_with model: @book, url: book_path(@book.id), method: :patch do |f| %>
   <div >
   <p class="sub-title">本のタイトル</p>

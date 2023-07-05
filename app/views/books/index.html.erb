@@ -1,3 +1,7 @@
+<div class="success">
+  <%= flash[:success] %>
+</div>
+
 <h1>Books</h1>
 
 <table>
@@ -27,6 +31,21 @@
 
 <div class="new-main">
   <h2>New book</h2>
+
+<div class="error-box">
+  <div class="error-title">
+    <% if @book.errors.any? %>
+      <%= @book.errors.count %>error prohibited this book from being saved:
+  </div>
+      <ul>
+        <div class="error-message">
+        <% @book.errors.full_messages.each do |message| %>
+          <li><%= message %></li>
+        <% end %>
+        </div>
+      </ul>
+     <% end %>
+</div>
 
   <%= form_with model: @books, url: '/books', method: :post do |f| %>
     <p class="sub-title">本のタイトル</p>
