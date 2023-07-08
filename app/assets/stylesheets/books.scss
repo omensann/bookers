@@ -2,8 +2,12 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
 
-a {
+td > a {
   color: #000;
+}
+
+td {
+  padding: 0 4px;
 }
 
 a:hover {
@@ -11,39 +15,39 @@ a:hover {
   background-color: #000;
 }
 
-th {
-  padding: 5px 0 5px;
-}
-
-td {
-  padding: 0 4px;
+th, td {
+  color: #333;
+  padding-bottom: 5px;
 }
 
 table {
-  margin: 0 6px;
+  margin: 0 3px;
+}
+
+h1 {
+  margin-bottom: 12px;
 }
 
 h2 {
-  margin: 20px 0 0;
+  margin: 19px 0 13px;
 }
 
-.sub-title {
-  margin-top: 8px;
+textarea, input {
+  margin-bottom: 10px;
 }
 
-.create-button {
+.submit-button {
   display: block;
-  margin-top: 10px;
+  margin-bottom: 12px;
+  padding: 1px 6px;
 }
 
-.update-button {
-  display: block;
-  margin-top: 10px;
-  margin-bottom: 8px;
+main {
+  padding-left: 30px;
 }
 
 main > p {
-  margin:10px 0 30px 30px;
+  margin-bottom: 32px;
 }
 
 .edit-back-link > p {
@@ -54,13 +58,29 @@ main > p {
   display: inline-block;
 }
 
-.error-box {
+thead {
+
+  margin: 12px 0 5px;
 }
 
-.error-title {
+.error-box {
+  width: 470px;
+  height: 130px;
+  margin-bottom: 20px;
+  position: relative;
+  background-color: #eee;
+}
 
+.error-text {
+  color: #fff;
+  font-weight: bold;
+  width: 100%;
+  background-color: red;
+  padding: 7px 17px;
 }
 
 .error-message {
-
+  position: absolute;
+  top: 60px;
+  left: 86px;
 }
